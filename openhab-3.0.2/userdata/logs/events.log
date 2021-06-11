@@ -1,0 +1,6 @@
+2021-05-26 03:00:55.190 [INFO ] [ab.event.ThingStatusInfoChangedEvent] - Thing 'linuxinput:input-device:41a3b23093' changed from UNINITIALIZED to INITIALIZING
+2021-05-26 03:00:55.196 [INFO ] [ab.event.ThingStatusInfoChangedEvent] - Thing 'linuxinput:input-device:41a3b23093' changed from INITIALIZING to OFFLINE (CONFIGURATION_PENDING)
+2021-05-26 03:01:17.966 [INFO ] [ab.event.ThingStatusInfoChangedEvent] - Thing 'linuxinput:input-device:41a3b23093' changed from OFFLINE (CONFIGURATION_PENDING) to REMOVING
+2021-05-26 03:01:17.973 [INFO ] [ab.event.ThingStatusInfoChangedEvent] - Thing 'linuxinput:input-device:41a3b23093' changed from REMOVING to REMOVED
+2021-05-26 03:01:18.051 [INFO ] [ab.event.ThingStatusInfoChangedEvent] - Thing 'linuxinput:input-device:41a3b23093' changed from REMOVED to UNINITIALIZED
+2021-05-26 03:01:18.057 [INFO ] [ab.event.ThingStatusInfoChangedEvent] - Thing 'linuxinput:input-device:41a3b23093' changed from UNINITIALIZED to UNINITIALIZED (HANDLER_MISSING_ERROR)

@@ -1,0 +1,8 @@
+osgi.wiring.package; (&(osgi.wiring.package=org.objectweb.asm)(&(version>=5.0.0)(!(version>=6.0.0))))
+224; version=5.0.3
+osgi.wiring.package; (osgi.wiring.package=jnr.x86asm)
+222; version=0.0.0
+osgi.wiring.package; (osgi.wiring.package=com.kenai.jffi)
+219; version=1.2.18
+osgi.wiring.package; (osgi.wiring.package=jnr.a64asm)
+221; version=0.0.0

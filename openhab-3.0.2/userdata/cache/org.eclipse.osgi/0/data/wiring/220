@@ -1,0 +1,2 @@
+osgi.wiring.host; (osgi.wiring.host=com.github.jnr.jffi)
+219

@@ -1,0 +1,32 @@
+{
+  "linuxinput:input-device:41a3b23093": {
+    "class": "org.openhab.core.thing.internal.ThingImpl",
+    "value": {
+      "label": "LinuxInput Device",
+      "channels": [],
+      "configuration": {
+        "properties": {
+          "path": "./",
+          "enable": true
+        }
+      },
+      "properties": {},
+      "uid": {
+        "segments": [
+          "linuxinput",
+          "input-device",
+          "41a3b23093"
+        ],
+        "uid": "linuxinput:input-device:41a3b23093"
+      },
+      "thingTypeUID": {
+        "segments": [
+          "linuxinput",
+          "input-device"
+        ],
+        "uid": ""
+      },
+      "location": "livingroom"
+    }
+  }
+}

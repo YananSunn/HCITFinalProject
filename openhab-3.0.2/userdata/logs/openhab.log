@@ -1,0 +1,29 @@
+2021-05-26 00:19:39.901 [INFO ] [.core.internal.i18n.I18nProviderImpl] - Time zone set to 'Asia/Shanghai'.
+2021-05-26 00:19:39.938 [INFO ] [.core.internal.i18n.I18nProviderImpl] - Locale set to 'zh_CN'.
+2021-05-26 00:19:55.799 [INFO ] [.core.model.lsp.internal.ModelServer] - Started Language Server Protocol (LSP) service on port 5007
+2021-05-26 00:19:58.171 [INFO ] [org.openhab.ui.internal.UIService   ] - Started UI on port 8080
+2021-05-26 00:19:58.764 [INFO ] [ab.ui.habpanel.internal.HABPanelTile] - Started HABPanel at /habpanel
+2021-05-26 00:20:05.218 [INFO ] [e.automation.internal.RuleEngineImpl] - Rule engine started.
+2021-05-26 02:58:09.559 [WARN ] [.internal.LinuxInputDiscoveryService] - Could not enumerate \dev\input, it is not a directory
+2021-05-26 02:58:44.327 [WARN ] [.internal.LinuxInputDiscoveryService] - Could not enumerate \dev\input, it is not a directory
+2021-05-26 02:58:59.580 [WARN ] [.internal.LinuxInputDiscoveryService] - Could not enumerate \dev\input, it is not a directory
+2021-05-26 02:59:49.584 [WARN ] [.internal.LinuxInputDiscoveryService] - Could not enumerate \dev\input, it is not a directory
+2021-05-26 02:59:52.020 [WARN ] [.internal.LinuxInputDiscoveryService] - Could not enumerate \dev\input, it is not a directory
+2021-05-26 03:00:39.599 [WARN ] [.internal.LinuxInputDiscoveryService] - Could not enumerate \dev\input, it is not a directory
+2021-05-26 03:00:55.651 [WARN ] [mmon.WrappedScheduledExecutorService] - Scheduled runnable ended with an exception: 
+org.openhab.binding.linuxinput.internal.evdev4j.LastErrorException: Error (5) for ./: Input/output error
+	at org.openhab.binding.linuxinput.internal.evdev4j.EvdevDevice.<init>(EvdevDevice.java:60) ~[?:?]
+	at org.openhab.binding.linuxinput.internal.LinuxInputHandler.delayedSetup(LinuxInputHandler.java:84) ~[?:?]
+	at org.openhab.binding.linuxinput.internal.DeviceReadingHandler.performDelayedSetup(DeviceReadingHandler.java:85) ~[?:?]
+	at org.openhab.binding.linuxinput.internal.DeviceReadingHandler.lambda$0(DeviceReadingHandler.java:57) ~[?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2021-05-26 03:01:29.614 [WARN ] [.internal.LinuxInputDiscoveryService] - Could not enumerate \dev\input, it is not a directory
+2021-05-26 03:02:19.622 [WARN ] [.internal.LinuxInputDiscoveryService] - Could not enumerate \dev\input, it is not a directory
+2021-05-26 03:02:36.758 [INFO ] [ab.ui.habpanel.internal.HABPanelTile] - Stopped HABPanel
+2021-05-26 03:02:36.791 [INFO ] [basic.internal.servlet.WebAppServlet] - Stopped Basic UI
+2021-05-26 03:02:36.831 [INFO ] [org.openhab.ui.internal.UIService   ] - Stopped UI

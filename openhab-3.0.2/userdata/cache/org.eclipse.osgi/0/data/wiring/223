@@ -1,0 +1,26 @@
+osgi.wiring.package; (osgi.wiring.package=jnr.ffi.provider)
+218; version=2.1.9
+osgi.wiring.package; (osgi.wiring.package=jnr.ffi.mapper)
+218; version=2.1.9
+osgi.wiring.package; (osgi.wiring.package=jnr.constants.platform)
+216; version=0.9.11
+osgi.ee; (&(osgi.ee=JavaSE)(version=1.6))
+0; version=[1.0.0, 1.1.0, 1.2.0, 1.3.0, 1.4.0, 1.5.0, 1.6.0, 1.7.0, 1.8.0, 9.0.0, 10.0.0, 11.0.0]
+osgi.wiring.package; (osgi.wiring.package=jnr.constants)
+216; version=0.9.11
+osgi.wiring.package; (osgi.wiring.package=jnr.constants.platform.windows)
+216; version=0.9.11
+osgi.wiring.package; (osgi.wiring.package=jnr.ffi.provider.converters)
+218; version=2.1.9
+osgi.wiring.package; (osgi.wiring.package=jnr.ffi.annotations)
+218; version=2.1.9
+osgi.wiring.package; (osgi.wiring.package=jnr.ffi.provider.jffi)
+218; version=2.1.9
+osgi.wiring.package; (osgi.wiring.package=jnr.ffi.byref)
+218; version=2.1.9
+osgi.wiring.package; (osgi.wiring.package=com.kenai.jffi)
+219; version=1.2.18
+osgi.wiring.package; (osgi.wiring.package=jnr.ffi)
+218; version=2.1.9
+osgi.wiring.package; (osgi.wiring.package=jnr.ffi.types)
+218; version=2.1.9

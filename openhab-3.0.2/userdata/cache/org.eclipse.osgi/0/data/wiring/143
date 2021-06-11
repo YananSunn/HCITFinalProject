@@ -1,0 +1,16 @@
+osgi.extender; (&(osgi.extender=osgi.component)(version>=1.4.0)(!(version>=2.0.0)))
+49; version=1.4.0
+osgi.wiring.package; (&(osgi.wiring.package=org.openhab.core.i18n)(&(version>=3.0.0)(!(version>=4.0.0))))
+128; version=3.0.2
+osgi.ee; (&(osgi.ee=JavaSE)(version=11))
+0; version=[1.0.0, 1.1.0, 1.2.0, 1.3.0, 1.4.0, 1.5.0, 1.6.0, 1.7.0, 1.8.0, 9.0.0, 10.0.0, 11.0.0]
+osgi.wiring.package; (&(osgi.wiring.package=org.openhab.core.config.core)(&(version>=3.0.0)(!(version>=4.0.0))))
+138; version=3.0.2
+osgi.wiring.package; (&(osgi.wiring.package=de.jollyday.util)(&(version>=0.5.0)(!(version>=1.0.0))))
+43; version=0.5.10
+osgi.wiring.package; (&(osgi.wiring.package=org.osgi.framework)(&(version>=1.8.0)(!(version>=2.0.0))))
+0; version=1.8.0
+osgi.wiring.package; (&(osgi.wiring.package=de.jollyday)(&(version>=0.5.0)(!(version>=1.0.0))))
+43; version=0.5.10
+osgi.wiring.package; (&(osgi.wiring.package=org.slf4j)(&(version>=1.7.0)(!(version>=2.0.0))))
+6; version=1.7.26

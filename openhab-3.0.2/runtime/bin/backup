@@ -1,0 +1,171 @@
+#!/bin/sh
+
+getFullPath() {
+  specDir="$(dirname "$1")"
+  if cd "$specDir" 2>/dev/null; then
+    OutputFile="$(pwd)/$(basename "$1")"
+  else
+    echo "Unable to locate specified directory '$specDir'"
+    exit 1
+  fi
+}
+
+setup(){
+  if [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
+    echo "Usage: backup [--full] [filename]"
+    echo ""
+    echo "  e.g. ./backup                     << Makes a file with a timed filename"
+    echo "       ./backup myBackup.zip        << Makes a file called myBackup.zip"
+    echo "       ./backup --full              << Makes a full backup file with a timed filename"
+    echo "       ./backup --full myBackup.zip << Makes a full backup file called myBackup.zip"
+    echo ""
+    echo "Use this script to backup your openHAB configuration, you can use the 'restore' script"
+    echo "from any machine to transfer your configuration across to another instance."
+    echo ""
+    echo "A full backup includes the tmp and cache directories that are normally excluded."
+    echo ""
+    echo "Backup directory: '$OPENHAB_BACKUPS'"
+    echo "Set \$OPENHAB_BACKUPS to change the default backup directory."
+    echo "Backup temporary directory: '$OPENHAB_BACKUPS_TEMP'"
+    echo "Set \$OPENHAB_BACKUPS_TEMP to change the default backup temporary directory."
+    exit 0
+  fi
+
+  ## Ask to run as root to prevent us from running sudo in this script.
+  if [ "$(id -u)" -ne 0 ]; then
+    echo "Please run this script as root! (e.g. use sudo)" >&2
+    exit 1
+  fi
+
+  command -v zip >/dev/null 2>&1 || {
+    echo "'zip' program was not found, please install it first." >&2
+    exit 1
+  }
+
+  ## Set path variables
+  if [ -r /etc/profile.d/openhab.sh ]; then
+    . /etc/profile.d/openhab.sh
+  elif [ -r /etc/default/openhab ]; then
+    . /etc/default/openhab
+  fi
+
+  WorkingDir="$(cd "$(dirname "$0")" && cd ../.. && pwd -P)"
+
+  if [ -z "$OPENHAB_CONF" ];  then OPENHAB_CONF="$WorkingDir/conf"; fi
+  if [ -z "$OPENHAB_USERDATA" ]; then OPENHAB_USERDATA="$WorkingDir/userdata"; fi
+  if [ -z "$OPENHAB_BACKUPS" ]; then OPENHAB_BACKUPS="$WorkingDir/backups"; fi
+  if [ -z "$OPENHAB_RUNTIME" ]; then OPENHAB_RUNTIME="$WorkingDir/runtime"; fi
+
+  echo "Using '$OPENHAB_CONF' as conf folder..."
+  echo "Using '$OPENHAB_USERDATA' as userdata folder..."
+  echo "Using '$OPENHAB_RUNTIME' as runtime folder..."
+
+  fileList="$OPENHAB_RUNTIME/bin/userdata_sysfiles.lst"
+
+  ## Parse arguments
+  if [ "$1" = "--full" ]; then
+    echo "including cache"
+    INCLUDE_CACHE="true"
+    shift
+  fi
+
+  timestamp=$(date +"%y_%m_%d-%H_%M_%S")
+  ## Set the filename
+  if [ -z "$1" ]; then
+    echo "Using '$OPENHAB_BACKUPS' as backup folder..."
+    OutputFile="$OPENHAB_BACKUPS/openhab-backup-$timestamp.zip"
+  else
+    getFullPath "$1"
+  fi
+  echo "Writing to '${OutputFile}'..."
+
+  ## Check two of the standard openHAB folders to make sure we're backing up the right thing.
+  if [ ! -d "$OPENHAB_USERDATA" ] || [ ! -d "$OPENHAB_CONF" ]; then
+    echo "Configuration paths are invalid..." >&2
+    echo "Try setting OPENHAB_USERDATA and OPENHAB_CONF environment variables." >&2
+    exit 1
+  fi
+
+  ## Find the group and user of the current openHAB folders.
+  OHUser=$(ls -ld "$OPENHAB_USERDATA" | awk '{print $3}')
+  OHGroup=$(ls -ld "$OPENHAB_USERDATA" | awk '{print $4}')
+
+  CurrentVersion="$(awk '/openhab-distro/{print $3}' "$OPENHAB_USERDATA/etc/version.properties")"
+
+  ## Store anything in temporary folders
+  # Check if we should use TempDir from env $OPENHAB_BACKUPS_TEMP
+  if [ -n "${OPENHAB_BACKUPS_TEMP}" ]; then
+    TempDir="$OPENHAB_BACKUPS_TEMP";
+  else
+    TempDir="/tmp/openhab/backup"
+  fi
+  echo "Making Temporary Directory if it is not already there"
+  if [ ! -d "$TempDir" ]; then
+    mkdir -p "$TempDir" || {
+    echo "Failed to make temporary directory: $TempDir" >&2
+    exit 1
+    }
+  fi
+  echo "Using $TempDir as TempDir"
+
+  ## Clear older stuff if it exists
+  rm -rf "${TempDir:?}/"*
+}
+
+echo "                                         "
+echo "#########################################"
+echo "          openHAB backup script          "
+echo "#########################################"
+echo "                                         "
+
+setup "$1" "$2"
+
+## Set backup properties file.
+{
+  echo "version=$CurrentVersion"
+  echo "timestamp=$timestamp"
+  echo "user=$OHUser"
+  echo "group=$OHGroup"
+} > "$TempDir/backup.properties"
+
+## Copy userdata and conf folders
+echo "Copying configuration to temporary folder..."
+mkdir -p "$TempDir/userdata"
+if [ -z "$INCLUDE_CACHE" ]; then
+  find "${OPENHAB_USERDATA:?}/"* -prune -not -path "${OPENHAB_BACKUPS:?}" -and -not -path '*/tmp' -and -not -path '*/cache' | xargs -I % cp -R % "$TempDir/userdata"
+else
+  find "${OPENHAB_USERDATA:?}/"* -prune -not -path "${OPENHAB_BACKUPS:?}" | xargs -I % cp -R % "$TempDir/userdata"
+fi
+mkdir -p "$TempDir/conf"
+cp -a "${OPENHAB_CONF:?}/"*      "$TempDir/conf"
+
+## Remove non-transferable userdata files
+echo "Removing unnecessary files..."
+if [ -f "$fileList" ]; then
+  while IFS= read -r fileName
+  do
+    rm -rf "$TempDir/userdata/etc/$fileName"
+  done < "$fileList"
+else
+  echo "System Filelist not found, exiting..."
+  exit 1
+fi
+
+## Create archive
+mkdir -p "$OPENHAB_BACKUPS"
+echo "Zipping folder..."
+
+## Jump into directory before making zip
+## Cleans file structure
+( cd "$TempDir" || exit
+  zip -qr "$OutputFile" . || {
+    echo "zip failed to store a backup."
+    exit 1
+  }
+) || exit 1
+
+echo "Removing temporary files..."
+rm -rf $TempDir
+
+echo "Success! Backup made in $OutputFile"
+echo ""

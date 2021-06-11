@@ -1,0 +1,16 @@
+osgi.wiring.package; (osgi.wiring.package=javax.ws.rs.core)
+45; version=2.1.0
+osgi.wiring.package; (osgi.wiring.package=javax.ws.rs.client)
+45; version=2.1.0
+osgi.wiring.package; (&(osgi.wiring.package=org.osgi.util.promise)(&(version>=1.1.0)(!(version>=2.0.0))))
+202; version=1.1.0
+osgi.wiring.package; (&(osgi.wiring.package=org.osgi.framework.dto)(&(version>=1.8.0)(!(version>=2.0.0))))
+0; version=1.8.0
+osgi.wiring.package; (osgi.wiring.package=javax.ws.rs.sse)
+45; version=2.1.0
+osgi.wiring.package; (&(osgi.wiring.package=org.osgi.dto)(&(version>=1.0.0)(!(version>=2.0.0))))
+0; version=1.0.0
+osgi.contract; (&(osgi.contract=JavaJAXRS)(version=2.1.0))
+45; version=[2.1.0, 2.0.0, 1.1.0]
+osgi.ee; (&(osgi.ee=JavaSE/compact1)(version=1.8))
+0; version=[1.8.0, 9.0.0, 10.0.0, 11.0.0]

@@ -1,0 +1,26 @@
+{
+  "admin": {
+    "class": "org.openhab.core.auth.ManagedUser",
+    "value": {
+      "name": "admin",
+      "passwordHash": "X3U/77l0tLiMwdM6G9sXiY2d6pBoaosj3HiTdb+92Y0eBil2bbAQHofOncCyWe9h8k7H2wo76c792jdwKGF3kA\u003d\u003d",
+      "passwordSalt": "WpEGvmq/B4RijEPaD8F9RRHyIWUk3y+F+wYk0KN483aMl9UIB7E9XsAhn0bl3BGqYDXGeAGc+VK2q8uk5mDeOQ\u003d\u003d",
+      "roles": [
+        "administrator"
+      ],
+      "sessions": [
+        {
+          "sessionId": "d2fd210a-e5b1-4ed7-b8b2-a4bab102fda0",
+          "refreshToken": "304522fd5fae4912a3db6b51e0143d51",
+          "createdTime": "May 12, 2021, 7:09:53 PM",
+          "lastRefreshTime": "May 26, 2021, 2:15:28 AM",
+          "clientId": "http://localhost:8080",
+          "redirectUri": "http://localhost:8080",
+          "scope": "admin",
+          "sessionCookie": true
+        }
+      ],
+      "apiTokens": []
+    }
+  }
+}

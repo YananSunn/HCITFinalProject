@@ -1,0 +1,124 @@
+[[MSG]]
+[2.2.0]
+NOTE;Logging configuration has changed. 'org.ops4j.pax.logging.cfg' has been backed up and restored to defaults!
+NOTE;*.rules files are now validated upon startup. Files with errors will from now on be logged and ignored by the runtime.
+
+[2.3.0]
+ALERT;Nest Binding: The 'camera' Thing Type now has channel groups. Add 'camera#' before the channel ID in the channel UID of existing camera channels. The 'time_to_target_mins' channel of the 'thermostat' Thing Type is renamed to 'time_to_target'
+ALERT;Oceanic Binding: The 'softener' Thing Type no longer exists and is replaced by the 'serial' and 'ethernet' Thing Types
+ALERT;Yamaha Receiver Binding: The configuration parameter names now use lower camel case convention. Change 'HOST' to 'host', 'PORT' to 'port' etc
+
+[2.4.0]
+ALERT;Astro Binding: The 'kilometer' and 'miles' channels have been replaced by a new 'distance' channel
+ALERT;Jeelink Binding: The 'currentWatt' and 'maxWatt' channels have been replaced with 'currentPower' and 'maxPower' channels
+ALERT;WeatherUnderground Binding: A bridge has been added on top of the current things, you need to add a bridge containing your api-key.
+ALERT;ZWave Binding: Major changes have been merged to support features such as security. All things must be deleted and re-added. Refer to https://community.openhab.org/t/zwave-binding-updates/51080 for further information.
+ALERT;Synop Binding is now using UoM. 'wind-speed-ms' and 'wind-speed-knots' channels have been replaced by a single 'wind-speed' channel.
+ALERT;Amazonechocontrol Binding: The account thing does not have settings anymore. You have to login at amazon once again through the proxy server http(s)://<YourOpenHAB>/amazonechocontrol
+ALERT;Milight Binding: The various available bulb types do not appear in the Paper UI Inbox anymore. The correct bulb need to be added manually. The bulb "zone" is now a configuration. Bulb Things need to be recreated to apply this change.
+ALERT;Hue emulation: The item to hue ID mapping is no longer stored in files, but in the openHAB storage service. You need to rediscover "devices" in all services that use the hue emulation (Amazon Echo, Google Home, etc).
+
+[2.5.0]
+ALERT;Azure IoT: Due to changes in the Azure API, this add-on is no longer working and has been removed.
+ALERT;DarkSky Binding: The item type of 'rain' and 'snow' channels have been changed to 'Number:Speed'.
+ALERT;EnOcean Binding: Channel 'receivingState' has been removed, because this was a string containing many information. For this, there are three new channels: 'rssi', 'repeatCount' and 'lastReceived'.
+ALERT;Homekit: Some tags have been renamed. Old names will not be supported in future versions. Please check documentation.
+ALERT;LGWebOS Binding: The binding parameter 'localIP' has been removed. The binding now uses system defaults for network communication. The thing type parameter 'deviceId' is no longer a parameter, but a property. Parameters 'host' and 'key' have been added.
+ALERT;Mail Action: The mail action has been replaced by a new mail binding.
+ALERT;MQTT Binding: Homie channel names may have changed if special characters are used for MQTT topic names.
+ALERT;OneWire Binding: Some thing types have changed and need to be updated in textual configurations. See documentation for further information.
+ALERT;OpenSprinkler Binding: The stationXX channels have been removed and replaced by a bridge/thing combination. See documentation for further information.
+ALERT;OpenSprinkler Binding: The Pi interface was removed, as it does not provide all of the features of the binding anymore. Please use the HTTP interface instead.
+ALERT;Pushbullet Action: The pushbullet action has been replaced by a new pushbullet binding.
+ALERT;REST Docs: This add-on is now part of the UIs. When previously installed using a UI, uninstall the REST Docs before updating and reinstall it after the update to prevent errors. When installing it using textual configuration, update 'services/addons.cfg' by removing 'restdocs' from 'misc' and add it to 'ui' instead.
+ALERT;senseBox Binding: The senseBox binding is now using Units of Measurements, and the channel name for Illuminance has changed. The Items must be reconfigured.
+ALERT;Somfytahoma Binding: The following channels have been renamed: 'cyclic_button_state' to 'cyclic_button', 'battery_status_state' to 'battery_status' and 'lighting_led_pod_mod_state' to 'lighting_led_pod_mode'.
+ALERT;Systeminfo Binding: The 'cpu#load' channel has been removed because the OSHI library no longer provides this information.
+ALERT;TP-Link Smart Home Binding: The energy and rssi channels are now using Units of Measurements. Items must be adapted and the things must be recreated.
+ALERT;Tesla Binding: The binding has been heavily refactored. It is required to delete old Tesla Things and set them up from scratch.
+ALERT;Vitotronic Binding: The following channels have been renamed: 'outsite_temp' to 'outside_temp', 'pelletburner:power' to 'pelletburner:powerlevel', 'party_temp' to 'party_temp_setpoint' and 'save_temp' to 'save_temp_setpoint'
+
+[[PRE]]
+[2.2.0]
+DEFAULT;$OPENHAB_USERDATA/etc/org.ops4j.pax.logging.cfg
+
+[3.0.0]
+DEFAULT;$OPENHAB_USERDATA/etc/log4j2.xml
+DEFAULT;$OPENHAB_USERDATA/etc/org.ops4j.pax.logging.cfg
+
+[[POST]]
+[2.3.0]
+DELETE;$OPENHAB_USERDATA/etc/org.openhab.addons.cfg
+DELETEDIR;$OPENHAB_USERDATA/kar
+
+[2.5.0]
+REPLACE;org.eclipse.smarthome.automation.dto.RuleDTO;org.openhab.core.automation.dto.RuleDTO;$OPENHAB_USERDATA/jsondb/automation_rules.json
+MOVE;$OPENHAB_USERDATA/config/org/eclipse/smarthome/core/i18nprovider.config;$OPENHAB_USERDATA/config/org/eclipse/smarthome/i18n.config
+REPLACE;org.eclipse.smarthome.core.i18nprovider;org.eclipse.smarthome.i18n;$OPENHAB_USERDATA/config/org/eclipse/smarthome/i18n.config
+
+[3.0.0]
+MOVE;$OPENHAB_USERDATA/config/org/eclipse/smarthome/i18n.config;$OPENHAB_USERDATA/config/org/openhab/i18n.config
+REPLACE;org.eclipse.smarthome.i18n;org.openhab.i18n;$OPENHAB_USERDATA/config/org/openhab/i18n.config
+MOVE;$OPENHAB_USERDATA/config/org/eclipse/smarthome/persistence.config;$OPENHAB_USERDATA/config/org/openhab/persistence.config
+REPLACE;org.eclipse.smarthome.persistence;org.openhab.persistence;$OPENHAB_USERDATA/config/org/openhab/persistence.config
+MOVE;$OPENHAB_USERDATA/config/org/eclipse/smarthome/audio.config;$OPENHAB_USERDATA/config/org/openhab/audio.config
+REPLACE;org.eclipse.smarthome.audio;org.openhab.audio;$OPENHAB_USERDATA/config/org/openhab/audio.config
+MOVE;$OPENHAB_USERDATA/config/org/eclipse/smarthome/voice.config;$OPENHAB_USERDATA/config/org/openhab/voice.config
+REPLACE;org.eclipse.smarthome.voice;org.openhab.voice;$OPENHAB_USERDATA/config/org/openhab/voice.config
+MOVE;$OPENHAB_USERDATA/config/org/eclipse/smarthome/inbox.config;$OPENHAB_USERDATA/config/org/openhab/inbox.config
+REPLACE;org.eclipse.smarthome.inbox;org.openhab.inbox;$OPENHAB_USERDATA/config/org/openhab/inbox.config
+MOVE;$OPENHAB_USERDATA/config/org/eclipse/smarthome/links.config;$OPENHAB_USERDATA/config/org/openhab/links.config
+REPLACE;org.eclipse.smarthome.links;org.openhab.links;$OPENHAB_USERDATA/config/org/openhab/links.config
+
+MOVE;$OPENHAB_USERDATA/config/org/eclipse/smarthome/folder.config;$OPENHAB_USERDATA/config/org/openhab/folder.config
+REPLACE;org.eclipse.smarthome.folder;org.openhab.folder;$OPENHAB_USERDATA/config/org/openhab/folder.config
+MOVE;$OPENHAB_USERDATA/config/org/eclipse/smarthome/cors.config;$OPENHAB_USERDATA/config/org/openhab/cors.config
+REPLACE;org.eclipse.smarthome.cors;org.openhab.cors;$OPENHAB_USERDATA/config/org/openhab/cors.config
+MOVE;$OPENHAB_USERDATA/config/org/eclipse/smarthome/threadpool.config;$OPENHAB_USERDATA/config/org/openhab/threadpool.config
+REPLACE;org.eclipse.smarthome.threadpool;org.openhab.threadpool;$OPENHAB_USERDATA/config/org/openhab/threadpool.config
+
+REPLACE;org.eclipse.smarthome;org.openhab;$OPENHAB_RUNTIME/services.cfg
+
+MOVE;$OPENHAB_USERDATA/config/org/eclipse/smarthome/autoupdate.config;$OPENHAB_USERDATA/config/org/openhab/autoupdate.config
+REPLACE;org.eclipse.smarthome.autoupdate;org.openhab.autoupdate;$OPENHAB_USERDATA/config/org/openhab/autoupdate.config
+MOVE;$OPENHAB_USERDATA/config/org/eclipse/smarthome/chart.config;$OPENHAB_USERDATA/config/org/openhab/chart.config
+REPLACE;org.eclipse.smarthome.chart;org.openhab.chart;$OPENHAB_USERDATA/config/org/openhab/chart.config
+MOVE;$OPENHAB_USERDATA/config/org/eclipse/smarthome/lsp.config;$OPENHAB_USERDATA/config/org/openhab/lsp.config
+REPLACE;org.eclipse.smarthome.lsp;org.openhab.lsp;$OPENHAB_USERDATA/config/org/openhab/lsp.config
+MOVE;$OPENHAB_USERDATA/config/org/eclipse/smarthome/network.config;$OPENHAB_USERDATA/config/org/openhab/network.config
+REPLACE;org.eclipse.smarthome.network;org.openhab.network;$OPENHAB_USERDATA/config/org/openhab/network.config
+MOVE;$OPENHAB_USERDATA/config/org/eclipse/smarthome/rulehli.config;$OPENHAB_USERDATA/config/org/openhab/rulehli.config
+REPLACE;org.eclipse.smarthome.rulehli;org.openhab.rulehli;$OPENHAB_USERDATA/config/org/openhab/rulehli.config
+
+REPLACE;org.eclipse.smarthome.core;org.openhab.core;$OPENHAB_USERDATA/jsondb/automation_rules.json
+REPLACE;org.eclipse.smarthome;org.openhab.core;$OPENHAB_USERDATA/jsondb/automation_rules.json
+
+MOVE;$OPENHAB_USERDATA/jsondb/org.eclipse.smarthome.config.discovery.DiscoveryResult.json;$OPENHAB_USERDATA/jsondb/org.openhab.core.config.discovery.DiscoveryResult.json
+REPLACE;org.eclipse.smarthome.core;org.openhab.core;$OPENHAB_USERDATA/jsondb/org.openhab.core.config.discovery.DiscoveryResult.json
+REPLACE;org.eclipse.smarthome;org.openhab.core;$OPENHAB_USERDATA/jsondb/org.openhab.core.config.discovery.DiscoveryResult.json
+
+MOVE;$OPENHAB_USERDATA/jsondb/org.eclipse.smarthome.core.items.Item.json;$OPENHAB_USERDATA/jsondb/org.openhab.core.items.Item.json
+REPLACE;org.eclipse.smarthome.core;org.openhab.core;$OPENHAB_USERDATA/jsondb/org.openhab.core.items.Item.json
+REPLACE;org.eclipse.smarthome;org.openhab.core;$OPENHAB_USERDATA/jsondb/org.openhab.core.items.Item.json
+
+MOVE;$OPENHAB_USERDATA/jsondb/org.eclipse.smarthome.core.items.Metadata.json;$OPENHAB_USERDATA/jsondb/org.openhab.core.items.Metadata.json
+REPLACE;org.eclipse.smarthome.core;org.openhab.core;$OPENHAB_USERDATA/jsondb/org.openhab.core.items.Metadata.json
+REPLACE;org.eclipse.smarthome;org.openhab.core;$OPENHAB_USERDATA/jsondb/org.openhab.core.items.Metadata.json
+
+MOVE;$OPENHAB_USERDATA/jsondb/org.eclipse.smarthome.core.thing.link.ItemChannelLink.json;$OPENHAB_USERDATA/jsondb/org.openhab.core.thing.link.ItemChannelLink.json
+REPLACE;org.eclipse.smarthome.core;org.openhab.core;$OPENHAB_USERDATA/jsondb/org.openhab.core.thing.link.ItemChannelLink.json
+REPLACE;org.eclipse.smarthome;org.openhab.core;$OPENHAB_USERDATA/jsondb/org.openhab.core.thing.link.ItemChannelLink.json
+
+MOVE;$OPENHAB_USERDATA/jsondb/org.eclipse.smarthome.core.thing.Thing.json;$OPENHAB_USERDATA/jsondb/org.openhab.core.thing.Thing.json
+REPLACE;org.eclipse.smarthome.core;org.openhab.core;$OPENHAB_USERDATA/jsondb/org.openhab.core.thing.Thing.json
+REPLACE;org.eclipse.smarthome;org.openhab.core;$OPENHAB_USERDATA/jsondb/org.openhab.core.thing.Thing.json
+
+DELETE;$OPENHAB_USERDATA/config/org/openhab/classicui.config
+DELETE;$OPENHAB_USERDATA/jsondb/org.eclipse.smarthome.core.thing.link.ItemThingLink.json
+
+DELETEDIR;$OPENHAB_USERDATA/config/org/eclipse/smarthome
+DELETEDIR;$OPENHAB_USERDATA/habmin
+
+DELETE;$OPENHAB_USERDATA/etc/com.eclipsesource.jaxrs.connector.cfg	
+DELETE;$OPENHAB_USERDATA/etc/com.eclipsesource.jaxrs.swagger.cfg
+DELETEDIR;$OPENHAB_USERDATA/config/com/eclipsesource

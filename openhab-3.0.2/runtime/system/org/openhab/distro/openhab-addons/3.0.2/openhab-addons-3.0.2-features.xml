@@ -1,0 +1,1839 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="openhab-addons-3.0.2">
+    <feature name="openhab-binding-zwave" description="Z-Wave Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.zwave/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-automation-groovyscripting" description="Groovy Scripting" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.automation.groovyscripting/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-automation-jythonscripting" description="Jython Scripting" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.automation.jythonscripting/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-adorne" description="Adorne Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.adorne/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-airquality" description="Air Quality Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.airquality/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-airvisualnode" description="AirVisual Node Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.airvisualnode/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-alarmdecoder" description="alarmdecoder Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.alarmdecoder/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-allplay" description="AllPlay Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.allplay/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-amazondashbutton" description="Amazon Dash Button Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-runtime-jna</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.amazondashbutton/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-amazonechocontrol" description="Amazon Echo Control Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.amazonechocontrol/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-ambientweather" description="Ambient Weather Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.okhttp/3.8.1_1</bundle>
+        <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.okio/1.13.0_1</bundle>
+        <bundle dependency="true">mvn:org.openhab.osgiify/io.socket.socket.io-client/1.0.0</bundle>
+        <bundle dependency="true">mvn:org.openhab.osgiify/io.socket.engine.io-client/1.0.0</bundle>
+        <bundle dependency="true">mvn:org.json/json/20180813</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.ambientweather/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-astro" description="Astro Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.astro/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-atlona" description="Atlona PRO3 Switch Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.atlona/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-autelis" description="Autelis Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.autelis/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-automower" description="Automower Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.automower/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-avmfritz" description="AVM FRITZ!Box Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-upnp</feature>
+        <feature dependency="true">openhab.tp-jaxb</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.avmfritz/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-bigassfan" description="Big Ass Fan Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.bigassfan/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-boschindego" description="Bosch Indego Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature dependency="true">openhab.tp-jackson</feature>
+        <bundle dependency="true">mvn:org.apache.httpcomponents/httpcore-osgi/4.4.9</bundle>
+        <bundle dependency="true">mvn:org.apache.httpcomponents/httpclient-osgi/4.5.5</bundle>
+        <bundle dependency="true">mvn:commons-codec/commons-codec/1.10</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.boschindego/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-bosesoundtouch" description="Bose SoundTouch Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-http</feature>
+        <feature>openhab-transport-mdns</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.bosesoundtouch/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-bsblan" description="BSB-LAN Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.bsblan/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-bticinosmarther" description="BTicino Smarther Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.bticinosmarther/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-buienradar" description="Buienradar Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.buienradar/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-caddx" description="Caddx Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.caddx/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-cbus" description="CBus Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.cbus/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-chromecast" description="Chromecast Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-mdns</feature>
+        <feature dependency="true">openhab.tp-jackson</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.chromecast/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-cm11a" description="cm11a Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.cm11a/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-comfoair" description="ComfoAir Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.comfoair/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-coolmasternet" description="CoolMasterNet Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.coolmasternet/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-coronastats" description="CoronaStats Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.coronastats/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-daikin" description="Daikin Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.daikin/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-danfossairunit" description="DanfossAirUnit Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.danfossairunit/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-darksky" description="Dark Sky Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.darksky/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-deconz" description="Dresden Elektronik deCONZ Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-http</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.deconz/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-denonmarantz" description="Denon / Marantz Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-mdns</feature>
+        <feature dependency="true">openhab.tp-jaxb</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.denonmarantz/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-digiplex" description="Digiplex/EVO Alarm System Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.digiplex/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-digitalstrom" description="digitalSTROM Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-mdns</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.digitalstrom/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-dlinksmarthome" description="D-Link Smart Home Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-mdns</feature>
+        <feature dependency="true">openhab.tp-jaxws</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.dlinksmarthome/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-dmx" description="DMX Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.dmx/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-doorbird" description="Doorbird Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle dependency="true">mvn:net.java.dev.jna/jna/5.5.0</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.doorbird/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-draytonwiser" description="DraytonWiser Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.draytonwiser/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-dscalarm" description="DSCAlarm Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.dscalarm/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-dsmr" description="DSMR Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.dsmr/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-dwdpollenflug" description="DWD Pollenflug Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.dwdpollenflug/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-dwdunwetter" description="DWD Unwetter Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.dwdunwetter/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-ecobee" description="Ecobee Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.ecobee/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-elerotransmitterstick" description="Elero TransmitterStick Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.elerotransmitterstick/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-energenie" description="Energenie Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.energenie/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-enigma2" description="Enigma2 Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.enigma2/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-enocean" description="EnOcean Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.enocean/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-enturno" description="Enturno Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.enturno/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-epsonprojector" description="Epson Projector Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.epsonprojector/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-etherrain" description="Etherrain Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.etherrain/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-evohome" description="Evohome Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-http</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.evohome/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-exec" description="Exec Binding" version="3.0.2">
+        <configfile finalname="${openhab.conf}/misc/exec.whitelist" override="false">mvn:org.openhab.addons.features.karaf/org.openhab.addons.features.karaf.openhab-addons-external/3.0.2/cfg/exec.whitelist</configfile>
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.exec/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-feed" description="Feed Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.feed/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-feican" description="Feican Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.feican/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-fmiweather" description="FMI Weather Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.fmiweather/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-folding" description="Folding Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.folding/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-foobot" description="Foobot Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.foobot/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-freebox" description="Freebox Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-mdns</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.freebox/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-fronius" description="Fronius Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.fronius/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-fsinternetradio" description="Frontier Silicon Internet Radio Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.fsinternetradio/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-ftpupload" description="FTP Upload Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.ftpupload/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-gardena" description="Gardena Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.gardena/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-gce" description="GCE Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.gce/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-globalcache" description="GlobalCache Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transformation-map</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.globalcache/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-goecharger" description="Go-eCharger Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.goecharger/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-gpstracker" description="GPSTracker Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.gpstracker/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-gree" description="Gree Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.gree/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-groheondus" description="GROHE ONDUS Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature dependency="true">openhab.tp-jackson</feature>
+        <bundle dependency="true">mvn:org.apache.commons/commons-text/1.6</bundle>
+        <bundle dependency="true">mvn:org.apache.commons/commons-lang3/3.8.1</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.groheondus/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-harmonyhub" description="Harmony Hub Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.harmonyhub/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-hdanywhere" description="HDAnywhere Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.hdanywhere/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-hdpowerview" description="HD PowerView Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.hdpowerview/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-helios" description="Helios Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle dependency="true">mvn:org.apache.ws.xmlschema/xmlschema-core/2.2.4</bundle>
+        <bundle dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jaxws-api-2.2/2.9.0</bundle>
+        <bundle dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.saaj-api-1.3/2.9.0</bundle>
+        <bundle dependency="true">mvn:org.apache.cxf/cxf-core/3.1.14</bundle>
+        <bundle dependency="true">mvn:org.apache.cxf.services.wsn/cxf-services-wsn-api/3.1.14</bundle>
+        <bundle dependency="true">mvn:org.apache.felix/org.apache.felix.framework/6.0.2</bundle>
+        <bundle dependency="true">mvn:org.apache.geronimo.specs/geronimo-ws-metadata_2.0_spec/1.1.3</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.helios/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-heliosventilation" description="HeliosVentilation Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.heliosventilation/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-heos" description="HEOS Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle dependency="true">mvn:commons-net/commons-net/3.6</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.heos/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-homematic" description="Homematic Binding" version="3.0.2">
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.homematic/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-hpprinter" description="HP Printer Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-mdns</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.hpprinter/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-http" description="HTTP Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.http/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-hue" description="Hue Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.hue/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-hydrawise" description="Hydrawise Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.hydrawise/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-hyperion" description="Hyperion Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-mdns</feature>
+        <feature>openhab-transport-http</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.hyperion/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-iammeter" description="Iammeter Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.iammeter/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-iaqualink" description="iAqualink Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.iaqualink/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-icalendar" description="iCalendar Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature dependency="true">openhab.tp-jackson</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.icalendar/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-icloud" description="iCloud Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.icloud/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-ihc" description="IHC / ELKO Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle dependency="true">mvn:org.apache.httpcomponents/httpcore-osgi/4.4.10</bundle>
+        <bundle dependency="true">mvn:org.apache.httpcomponents/httpclient-osgi/4.5.8</bundle>
+        <bundle dependency="true">mvn:commons-logging/commons-logging/1.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.ihc/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-innogysmarthome" description="innogy Smarthome Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-http</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.innogysmarthome/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-insteon" description="Insteon Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.insteon/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-intesis" description="Intesis Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.intesis/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-ipcamera" description="ipcamera Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature dependency="true">openhab.tp-jaxb</feature>
+        <feature dependency="true">openhab.tp-netty</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.ipcamera/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-ipp" description="IPP Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-mdns</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.ipp/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-irobot" description="iRobot Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-mqtt</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.irobot/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-irtrans" description="IRTrans Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.irtrans/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-ism8" description="ism8 Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.ism8/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-jablotron" description="Jablotron Alarm Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-http</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.jablotron/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-jeelink" description="Jeelink Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.jeelink/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-kaleidescape" description="Kaleidescape Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.kaleidescape/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-keba" description="Keba Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.keba/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-km200" description="KM200 Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-mdns</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.km200/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-knx" description="KNX Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.knx/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-kodi" description="Kodi Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-http</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.kodi/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-konnected" description="Konnected Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-http</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.konnected/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-kostalinverter" description="Kostal Inverter Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.kostalinverter/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-kvv" description="KVV Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.kvv/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-lametrictime" description="LaMetric Time Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.lametrictime/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-lcn" description="Lcn Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.lcn/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-leapmotion" description="LeapMotion Binding" version="3.0.2">
+        <configfile finalname="${openhab.userdata}/tmp/lib/libLeap.dylib" override="false">mvn:org.openhab.addons.features.karaf/org.openhab.addons.features.karaf.openhab-addons-external/3.0.2/lib/libLeap</configfile>
+        <configfile finalname="${openhab.userdata}/tmp/lib/libLeapJava.dylib" override="false">mvn:org.openhab.addons.features.karaf/org.openhab.addons.features.karaf.openhab-addons-external/3.0.2/lib/libLeapJava</configfile>
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.leapmotion/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-lghombot" description="LG HomBot Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.lghombot/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-lgtvserial" description="LG TV Serial Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.lgtvserial/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-lgwebos" description="LG webOS Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-upnp</feature>
+        <feature>openhab.tp-httpclient</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.lgwebos/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-lifx" description="LIFX Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.lifx/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-linky" description="Linky Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle dependency="true">mvn:org.jsoup/jsoup/1.8.3</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.linky/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-linuxinput" description="Linux Input Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature prerequisite="true">wrap</feature>
+        <bundle dependency="true">mvn:com.github.jnr/jnr-enxio/0.19</bundle>
+        <bundle dependency="true">wrap:mvn:com.github.jnr/jnr-posix/3.0.47$overwrite=merge&amp;Import-Package=jnr.ffi.provider.jffi,jnr.constants,jnr.constants.platform,jnr.constants.platform.windows,jnr.ffi,jnr.ffi.annotations,jnr.ffi.byref,jnr.ffi.mapper,jnr.ffi.provider,jnr.ffi.types,com.kenai.jffi,jnr.ffi.provider.converters</bundle>
+        <bundle>mvn:com.github.jnr/jffi/1.2.18/jar/native</bundle>
+        <bundle dependency="true">mvn:com.github.jnr/jffi/1.2.18/jar/complete</bundle>
+        <bundle dependency="true">mvn:com.github.jnr/jnr-constants/0.9.11</bundle>
+        <bundle dependency="true">mvn:com.github.jnr/jnr-ffi/2.1.9</bundle>
+        <bundle dependency="true">wrap:mvn:com.github.jnr/jnr-a64asm/1.0.0$Bundle-Name=jnr-a64asm&amp;Bundle-SymbolicName=com.github.jnr.jnr-a64asm&amp;Bundle-Version=1.0.0</bundle>
+        <bundle dependency="true">wrap:mvn:com.github.jnr/jnr-x86asm/1.0.2$Bundle-Name=jnr-x86asm&amp;Bundle-SymbolicName=com.github.jnr.jnr-x86asm&amp;Bundle-Version=1.0.2</bundle>
+        <bundle dependency="true">mvn:org.ow2.asm/asm/5.0.3</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.linuxinput/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-lirc" description="LIRC Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.lirc/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-logreader" description="Log Reader Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.logreader/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-loxone" description="Loxone Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.loxone/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-luftdateninfo" description="LuftdatenInfo Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.luftdateninfo/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-lutron" description="Lutron Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.lutron/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-magentatv" description="MagentaTV Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.magentatv/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-mail" description="Mail Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle dependency="true">mvn:com.sun.mail/javax.mail/1.6.2</bundle>
+        <bundle dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.activation-api-1.1/2.9.0</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.mail/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-max" description="MAX! Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.max/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-mcp23017" description="MCP23017 Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.mcp23017/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-melcloud" description="MELCloud Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.melcloud/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-meteoalerte" description="Meteo Alerte Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.meteoalerte/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-meteoblue" description="meteoblue Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.meteoblue/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-meteostick" description="Meteostick Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.meteostick/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-miele" description="Miele@home Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.miele/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-mihome" description="Xiaomi Mi Smart Home Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.mihome/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-miio" description="Xiaomi Mi IO Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-mdns</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.miio/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-milight" description="Milight Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.milight/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-millheat" description="Millheat Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.millheat/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-minecraft" description="Minecraft Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-mdns</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.minecraft/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-monopriceaudio" description="Monoprice Whole House Audio Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.monopriceaudio/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-mpd" description="MPD Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.mpd/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-mystrom" description="mystrom Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.mystrom/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-nanoleaf" description="Nanoleaf Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-mdns</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.nanoleaf/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-neato" description="Neato Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.neato/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-neeo" description="NEEO Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.neeo/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-neohub" description="NeoHub Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.neohub/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-nest" description="Nest Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.nest/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-netatmo" description="Netatmo Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle dependency="true">mvn:org.openhab.osgiify/org.json.json/20131018</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.netatmo/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-network" description="Network Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-core-model-script</feature>
+        <bundle dependency="true">mvn:commons-net/commons-net/3.6</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.network/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-networkupstools" description="Network UPS Tools Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.networkupstools/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-nibeheatpump" description="Nibe Heat Pump Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.nibeheatpump/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-nibeuplink" description="NibeUplink Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.nibeuplink/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-nikobus" description="Nikobus Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.nikobus/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-nikohomecontrol" description="Niko Home Control Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-mqtt</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.nikohomecontrol/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-novafinedust" description="NovaFineDust Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.novafinedust/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-ntp" description="NTP Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.ntp/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-nuki" description="Nuki Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-http</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.nuki/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-nuvo" description="Nuvo Whole House Audio Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.nuvo/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-nzwateralerts" description="NZ Water Alerts Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.nzwateralerts/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-oceanic" description="Oceanic Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.oceanic/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-ojelectronics" description="OJElectronics Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.ojelectronics/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-omnikinverter" description="Omnik Inverter Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.omnikinverter/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-onebusaway" description="OneBusAway Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.onebusaway/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-onewire" description="OneWire Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.onewire/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-onewiregpio" description="OneWireGPIO Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.onewiregpio/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-onkyo" description="Onkyo Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.onkyo/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-opengarage" description="OpenGarage Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.opengarage/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-opensprinkler" description="OpenSprinkler Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.opensprinkler/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-openthermgateway" description="OpenThermGateway Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.openthermgateway/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-openuv" description="OpenUV Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.openuv/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-openweathermap" description="OpenWeatherMap Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.openweathermap/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-openwebnet" description="OpenWebNet (BTicino/Legrand) Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.openwebnet/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-oppo" description="Oppo Blu-ray Player Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.oppo/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-orvibo" description="Orvibo Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle dependency="true">mvn:org.apache.commons/commons-collections4/4.1</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.orvibo/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-paradoxalarm" description="Paradox Alarm System Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.paradoxalarm/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-pentair" description="Pentair Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.pentair/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-phc" description="PHC Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.phc/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-pioneeravr" description="PioneerAVR Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.pioneeravr/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-pixometer" description="pixometer Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.pixometer/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-pjlinkdevice" description="PJLinkDevice Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.pjlinkdevice/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-playstation" description="PlayStation Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.playstation/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-plclogo" description="PLCLogo Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.plclogo/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-plugwise" description="Plugwise Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.plugwise/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-powermax" description="Powermax Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.powermax/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-pulseaudio" description="Pulseaudio Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-mdns</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.pulseaudio/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-pushbullet" description="Pushbullet Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.activation-api-1.1/2.9.0</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.pushbullet/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-pushover" description="Pushover Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.pushover/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-radiothermostat" description="Radio Thermostat Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.radiothermostat/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-regoheatpump" description="RegoHeatPump Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.regoheatpump/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-remoteopenhab" description="Remote openHAB Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.remoteopenhab/3.0.2
+		</bundle>
+    </feature>
+    <feature name="openhab-binding-revogi" description="Revogi Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.revogi/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-rfxcom" description="RFXCOM Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.rfxcom/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-rme" description="RME Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.rme/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-robonect" description="Robonect Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.robonect/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-rotel" description="Rotel Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.rotel/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-russound" description="Russound Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.russound/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-sagercaster" description="Sager Weathercaster Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.sagercaster/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-samsungtv" description="Samsung TV Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.samsungtv/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-satel" description="Satel Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.satel/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-senechome" description="SenecHome Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.senechome/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-seneye" description="Seneye Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.seneye/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-sensebox" description="Sensebox Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.sensebox/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-sensibo" description="Sensibo Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.sensibo/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-serial" description="Serial Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.serial/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-serialbutton" description="Serial Button Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.serialbutton/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-shelly" description="Shelly Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-coap</feature>
+        <feature>openhab-transport-mdns</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.shelly/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-siemensrds" description="Siemens RDS Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.siemensrds/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-silvercrestwifisocket" description="Silvercrest Wifi Plug Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.silvercrestwifisocket/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-sinope" description="Sinope Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.sinope/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-sleepiq" description="SleepIQ Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.sleepiq/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-smaenergymeter" description="SMA Energy Monitor Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.smaenergymeter/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-smartmeter" description="Smartmeter Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.smartmeter/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-smartthings" description="Samsung Smartthings Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.smartthings/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-smhi" description="SMHI Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.smhi/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-snmp" description="SNMP Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.snmp/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-solaredge" description="SolarEdge Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.solaredge/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-solarlog" description="SolarLog Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.solarlog/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-somfymylink" description="Somfy MyLink Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.somfymylink/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-somfytahoma" description="Somfy Tahoma Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-http</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.somfytahoma/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-sonos" description="Sonos Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.sonos/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-sonyaudio" description="Sony Audio Binding" version="3.0.2">
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.sonyaudio/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-sonyprojector" description="Sony Projector Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.sonyprojector/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-spotify" description="Spotify Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-http</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.spotify/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-squeezebox" description="Squeezebox Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.squeezebox/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-synopanalyzer" description="Synop Analyzer Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.synopanalyzer/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-systeminfo" description="System Info Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle dependency="true">mvn:net.java.dev.jna/jna/5.5.0</bundle>
+        <bundle dependency="true">mvn:net.java.dev.jna/jna-platform/5.5.0</bundle>
+        <bundle dependency="true">mvn:com.github.oshi/oshi-core/4.5.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.systeminfo/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-tacmi" description="TACmi Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.tacmi/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-tado" description="Tado Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.tado/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-tankerkoenig" description="Tankerkoenig Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.tankerkoenig/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-telegram" description="Telegram Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.telegram/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-teleinfo" description="Teleinfo Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.teleinfo/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-tellstick" description="Tellstick Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <feature dependency="true">openhab.tp-netty</feature>
+        <feature dependency="true">openhab.tp-jaxb</feature>
+        <bundle dependency="true">mvn:net.java.dev.jna/jna/4.5.2</bundle>
+        <bundle dependency="true">mvn:net.java.dev.jna/jna-platform/4.5.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.tellstick/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-tesla" description="Tesla Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.tesla/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-tibber" description="tibber Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.tibber/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-touchwand" description="TouchWand Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.touchwand/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-tplinksmarthome" description="TP-Link Smart Home Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.tplinksmarthome/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-tr064" description="TR-064 Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature dependency="true">openhab.tp-jaxb</feature>
+        <feature dependency="true">openhab.tp-jaxws</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.tr064/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-tradfri" description="TRÅDFRI Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-coap</feature>
+        <feature>openhab-transport-mdns</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.tradfri/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-unifi" description="UniFi Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.unifi/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-unifiedremote" description="UnifiedRemote Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.unifiedremote/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-upb" description="UPB Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.upb/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-upnpcontrol" description="UPnP Control Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.upnpcontrol/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-urtsi" description="Somfy URTSI II Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.urtsi/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-valloxmv" description="ValloxMV Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.valloxmv/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-vektiva" description="Vektiva Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-http</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.vektiva/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-velbus" description="Velbus Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.velbus/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-velux" description="Velux Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.velux/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-venstarthermostat" description="Venstar Thermostat Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.venstarthermostat/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-verisure" description="Verisure Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle dependency="true">mvn:org.jsoup/jsoup/1.8.3</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.verisure/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-vigicrues" description="VigiCrues Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.vigicrues/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-vitotronic" description="Vitotronic Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.vitotronic/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-volvooncall" description="Volvo On Call Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.volvooncall/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-weathercompany" description="Weather Company Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.weathercompany/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-weatherunderground" description="WeatherUnderground Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.weatherunderground/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-wemo" description="Wemo Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.wemo/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-wifiled" description="WiFi LED Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.wifiled/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-windcentrale" description="Windcentrale Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.windcentrale/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-wlanthermo" description="WlanThermo Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.wlanthermo/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-wled" description="WLED Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.wled/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-xmltv" description="XMLTV Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature dependency="true">openhab.tp-jaxb</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.xmltv/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-xmppclient" description="XMPP Client Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle dependency="true">mvn:org.igniterealtime.smack/smack-extensions/4.3.3</bundle>
+        <bundle dependency="true">mvn:org.igniterealtime.smack/smack-im/4.3.3</bundle>
+        <bundle dependency="true">mvn:org.igniterealtime.smack/smack-tcp/4.3.3</bundle>
+        <bundle dependency="true">mvn:org.jxmpp/jxmpp-core/0.6.3</bundle>
+        <bundle dependency="true">mvn:org.jxmpp/jxmpp-jid/0.6.3</bundle>
+        <bundle dependency="true">mvn:org.jxmpp/jxmpp-util-cache/0.6.3</bundle>
+        <bundle dependency="true">mvn:org.minidns/minidns-core/0.3.3</bundle>
+        <bundle dependency="true">mvn:org.igniterealtime.smack/smack-core/4.3.3</bundle>
+        <bundle dependency="true">mvn:org.igniterealtime.smack/smack-sasl-javax/4.3.3</bundle>
+        <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xpp3/1.1.4c_7</bundle>
+        <bundle start-level="80">mvn:org.igniterealtime.smack/smack-resolver-javax/4.3.3</bundle>
+        <bundle start-level="80">mvn:org.igniterealtime.smack/smack-java7/4.3.3</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.xmppclient/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-yamahareceiver" description="Yamaha Receiver Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.yamahareceiver/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-yeelight" description="Yeelight Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.yeelight/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-yioremote" description="YIOremote Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.yioremote/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-zoneminder" description="ZoneMinder Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.zoneminder/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-zway" description="Z-Way Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle dependency="true">mvn:org.apache.commons/commons-lang3/3.4</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.zway/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-misc-homekit" description="HomeKit Integration" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-mdns</feature>
+        <feature>openhab.tp-netty</feature>
+        <bundle dependency="true">mvn:org.glassfish/javax.json/1.0.4</bundle>
+        <bundle dependency="true">mvn:javax.json/javax.json-api/1.0</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.io.homekit/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-misc-hueemulation" description="Hue Emulation" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-upnp</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.io.hueemulation/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-misc-imperihome" description="ImperiHome Integration" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-core-model-item</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.io.imperihome/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-misc-neeo" description="NEEO Integration" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.io.neeo/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-misc-openhabcloud" description="openHAB Cloud Connector" version="3.0.2">
+        <configfile finalname="${openhab.conf}/services/openhabcloud.cfg" override="false">mvn:org.openhab.addons.features.karaf/org.openhab.addons.features.karaf.openhab-addons-external/3.0.2/cfg/openhabcloud</configfile>
+        <feature>openhab-runtime-base</feature>
+        <bundle dependency="true">mvn:org.json/json/20180813</bundle>
+        <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jsr305/3.0.2_1</bundle>
+        <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.okhttp/3.8.1_1</bundle>
+        <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.okio/1.13.0_1</bundle>
+        <bundle dependency="true">mvn:org.openhab.osgiify/io.socket.socket.io-client/1.0.0</bundle>
+        <bundle dependency="true">mvn:org.openhab.osgiify/io.socket.engine.io-client/1.0.0</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.io.openhabcloud/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-persistence-dynamodb" description="DynamoDB Persistence" version="3.0.2">
+        <configfile finalname="${openhab.conf}/services/dynamodb.cfg" override="false">mvn:org.openhab.addons.features.karaf/org.openhab.addons.features.karaf.openhab-addons-external/3.0.2/cfg/dynamodb</configfile>
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.persistence.dynamodb/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-persistence-influxdb" description="InfluxDB Persistence" version="3.0.2">
+        <configfile finalname="${openhab.conf}/services/influxdb.cfg" override="false">mvn:org.openhab.addons.features.karaf/org.openhab.addons.features.karaf.openhab-addons-external/3.0.2/cfg/influxdb</configfile>
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.persistence.influxdb/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-persistence-jdbc-derby" description="JDBC Persistence Apache Derby" version="3.0.2">
+        <configfile finalname="${openhab.conf}/services/jdbc.cfg" override="false">mvn:org.openhab.addons.features.karaf/org.openhab.addons.features.karaf.openhab-addons-external/3.0.2/cfg/jdbc</configfile>
+        <feature prerequisite="false" dependency="false">openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.apache.derby/derbyclient/10.12.1.1</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.persistence.jdbc/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-persistence-jdbc-h2" description="JDBC Persistence H2" version="3.0.2">
+        <configfile finalname="${openhab.conf}/services/jdbc.cfg" override="false">mvn:org.openhab.addons.features.karaf/org.openhab.addons.features.karaf.openhab-addons-external/3.0.2/cfg/jdbc</configfile>
+        <feature prerequisite="false" dependency="false">openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:com.h2database/h2/1.4.191</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.persistence.jdbc/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-persistence-jdbc-hsqldb" description="JDBC Persistence HSQLDB" version="3.0.2">
+        <configfile finalname="${openhab.conf}/services/jdbc.cfg" override="false">mvn:org.openhab.addons.features.karaf/org.openhab.addons.features.karaf.openhab-addons-external/3.0.2/cfg/jdbc</configfile>
+        <feature prerequisite="false" dependency="false">openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.hsqldb/hsqldb/2.3.3</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.persistence.jdbc/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-persistence-jdbc-mariadb" description="JDBC Persistence MariaDB" version="3.0.2">
+        <configfile finalname="${openhab.conf}/services/jdbc.cfg" override="false">mvn:org.openhab.addons.features.karaf/org.openhab.addons.features.karaf.openhab-addons-external/3.0.2/cfg/jdbc</configfile>
+        <feature prerequisite="false" dependency="false">openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.mariadb.jdbc/mariadb-java-client/1.3.5</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.persistence.jdbc/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-persistence-jdbc-mysql" description="JDBC Persistence MySQL" version="3.0.2">
+        <configfile finalname="${openhab.conf}/services/jdbc.cfg" override="false">mvn:org.openhab.addons.features.karaf/org.openhab.addons.features.karaf.openhab-addons-external/3.0.2/cfg/jdbc</configfile>
+        <feature prerequisite="false" dependency="false">openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:mysql/mysql-connector-java/8.0.13</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.persistence.jdbc/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-persistence-jdbc-postgresql" description="JDBC Persistence PostgreSQL" version="3.0.2">
+        <configfile finalname="${openhab.conf}/services/jdbc.cfg" override="false">mvn:org.openhab.addons.features.karaf/org.openhab.addons.features.karaf.openhab-addons-external/3.0.2/cfg/jdbc</configfile>
+        <feature prerequisite="false" dependency="false">openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.postgresql/postgresql/9.4.1212</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.persistence.jdbc/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-persistence-jdbc-sqlite" description="JDBC Persistence SQLite" version="3.0.2">
+        <configfile finalname="${openhab.conf}/services/jdbc.cfg" override="false">mvn:org.openhab.addons.features.karaf/org.openhab.addons.features.karaf.openhab-addons-external/3.0.2/cfg/jdbc</configfile>
+        <feature prerequisite="false" dependency="false">openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.xerial/sqlite-jdbc/3.16.1</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.persistence.jdbc/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-persistence-jpa" description="JPA Persistence" version="3.0.2">
+        <configfile finalname="${openhab.conf}/services/jpa.cfg" override="false">mvn:org.openhab.addons.features.karaf/org.openhab.addons.features.karaf.openhab-addons-external/3.0.2/cfg/jpa</configfile>
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.persistence.jpa/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-persistence-mapdb" description="MapDB Persistence" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.persistence.mapdb/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-persistence-mongodb" description="MongoDB Persistence" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.persistence.mongodb/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-persistence-rrd4j" description="RRD4j Persistence" version="3.0.2">
+        <configfile finalname="${openhab.conf}/services/rrd4j.cfg" override="false">mvn:org.openhab.addons.features.karaf/org.openhab.addons.features.karaf.openhab-addons-external/3.0.2/cfg/rrd4j</configfile>
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.persistence.rrd4j/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-transformation-bin2json" description="Binary To JSON Transformation" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="75">mvn:org.openhab.addons.bundles/org.openhab.transform.bin2json/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-transformation-exec" description="Exec Transformation" version="3.0.2">
+        <configfile finalname="${openhab.conf}/misc/exec.whitelist" override="false">mvn:org.openhab.addons.features.karaf/org.openhab.addons.features.karaf.openhab-addons-external/3.0.2/cfg/exec.whitelist</configfile>
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="75">mvn:org.openhab.addons.bundles/org.openhab.transform.exec/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-transformation-javascript" description="Javascript Transformation" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="75">mvn:org.openhab.addons.bundles/org.openhab.transform.javascript/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-transformation-jinja" description="Jinja Transformation" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature dependency="true">openhab.tp-jackson</feature>
+        <bundle dependency="true">mvn:com.google.guava/guava/21.0</bundle>
+        <bundle dependency="true">mvn:ch.obermuhlner/big-math/2.1.0</bundle>
+        <bundle dependency="true">mvn:org.jsoup/jsoup/1.8.3</bundle>
+        <bundle dependency="true">mvn:org.openhab.osgiify/com.google.re2j.re2j/1.2</bundle>
+        <bundle dependency="true">mvn:de.odysseus.juel/juel-api/2.2.7</bundle>
+        <bundle dependency="true">mvn:de.odysseus.juel/juel-impl/2.2.7</bundle>
+        <bundle dependency="true">mvn:org.apache.commons/commons-lang3/3.4</bundle>
+        <bundle dependency="true">mvn:org.javassist/javassist/3.22.0-GA</bundle>
+        <bundle dependency="true">mvn:org.openhab.osgiify/com.hubspot.jinjava.jinjava/2.5.0</bundle>
+        <bundle start-level="75">mvn:org.openhab.addons.bundles/org.openhab.transform.jinja/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-transformation-jsonpath" description="JSONPath Transformation" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="75">mvn:org.openhab.addons.bundles/org.openhab.transform.jsonpath/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-transformation-map" description="Map Transformation" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="75">mvn:org.openhab.addons.bundles/org.openhab.transform.map/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-transformation-regex" description="RegEx Transformation" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="75">mvn:org.openhab.addons.bundles/org.openhab.transform.regex/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-transformation-scale" description="Scale Transformation" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="75">mvn:org.openhab.addons.bundles/org.openhab.transform.scale/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-transformation-xpath" description="XPath Transformation" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="75">mvn:org.openhab.addons.bundles/org.openhab.transform.xpath/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-transformation-xslt" description="XSLT Transformation" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="75">mvn:org.openhab.addons.bundles/org.openhab.transform.xslt/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-voice-googletts" description="Google Cloud Text-to-Speech" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.voice.googletts/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-voice-mactts" description="macOS Text-to-Speech" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.voice.mactts/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-voice-marytts" description="Mary Text-to-Speech" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle dependency="true">mvn:commons-collections/commons-collections/3.2.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.voice.marytts/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-voice-picotts" description="Pico Text-to-Speech" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.voice.picotts/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-voice-pollytts" description="Polly Text-to-Speech" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature dependency="true">openhab.tp-jackson</feature>
+        <bundle dependency="true">mvn:com.fasterxml.jackson.dataformat/jackson-dataformat-cbor/2.9.9</bundle>
+        <bundle dependency="true">mvn:org.apache.httpcomponents/httpcore-osgi/4.4.9</bundle>
+        <bundle dependency="true">mvn:org.apache.httpcomponents/httpclient-osgi/4.5.5</bundle>
+        <bundle dependency="true">mvn:org.openhab.osgiify/com.amazonaws.aws-java-sdk-core/1.11.490</bundle>
+        <bundle dependency="true">mvn:org.openhab.osgiify/com.amazonaws.aws-java-sdk-polly/1.11.490</bundle>
+        <bundle dependency="true">mvn:commons-logging/commons-logging/1.2</bundle>
+        <bundle dependency="true">mvn:joda-time/joda-time/2.8.1</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.voice.pollytts/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-voice-voicerss" description="VoiceRSS Text-to-Speech" version="3.0.2">
+        <configfile finalname="${openhab.conf}/services/voicerss.cfg" override="false">mvn:org.openhab.addons.features.karaf/org.openhab.addons.features.karaf.openhab-addons-external/3.0.2/cfg/voicerss</configfile>
+        <feature>openhab-runtime-base</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.voice.voicerss/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-bluetooth" description="Bluetooth Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle dependency="true">mvn:com.github.hypfvieh/bluez-dbus-osgi/0.1.3</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.bluetooth/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.bluetooth.airthings/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.bluetooth.am43/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.bluetooth.bluez/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.bluetooth.bluegiga/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.bluetooth.blukii/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.bluetooth.daikinmadoka/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.bluetooth.enoceanble/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.bluetooth.generic/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.bluetooth.roaming/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.bluetooth.ruuvitag/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-mqtt" description="MQTT Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-mqtt</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.mqtt/3.0.2</bundle>
+        <bundle start-level="81">mvn:org.openhab.addons.bundles/org.openhab.binding.mqtt.generic/3.0.2</bundle>
+        <bundle start-level="82">mvn:org.openhab.addons.bundles/org.openhab.binding.mqtt.homeassistant/3.0.2</bundle>
+        <bundle start-level="82">mvn:org.openhab.addons.bundles/org.openhab.binding.mqtt.homie/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-modbus" description="Modbus Binding" version="3.0.2">
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-modbus</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.modbus/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.modbus.e3dc/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.modbus.helioseasycontrols/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.modbus.stiebeleltron/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.modbus.studer/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.modbus.sunspec/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-binding-zigbee" description="openHAB ZigBee Binding" version="3.0.2">
+        <details>This project contains the official add-ons of openHAB</details>
+        <feature>openhab-runtime-base</feature>
+        <feature>openhab-transport-serial</feature>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.zigbee/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.zigbee.cc2531/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.zigbee.console/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.zigbee.console.ember/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.zigbee.console.telegesis/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.zigbee.ember/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.zigbee.telegesis/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.zigbee.xbee/3.0.2</bundle>
+        <bundle start-level="80">mvn:org.openhab.addons.bundles/org.openhab.binding.zigbee.serial/3.0.2</bundle>
+        <bundle start-level="80">mvn:com.zsmartsystems.zigbee/com.zsmartsystems.zigbee/1.3.8</bundle>
+        <bundle start-level="80">mvn:com.zsmartsystems.zigbee/com.zsmartsystems.zigbee.dongle.ember/1.3.8</bundle>
+        <bundle start-level="80">mvn:com.zsmartsystems.zigbee/com.zsmartsystems.zigbee.dongle.telegesis/1.3.8</bundle>
+        <bundle start-level="80">mvn:com.zsmartsystems.zigbee/com.zsmartsystems.zigbee.dongle.cc2531/1.3.8</bundle>
+        <bundle start-level="80">mvn:com.zsmartsystems.zigbee/com.zsmartsystems.zigbee.dongle.xbee/1.3.8</bundle>
+        <bundle start-level="80">mvn:com.zsmartsystems.zigbee/com.zsmartsystems.zigbee.console/1.3.8</bundle>
+        <bundle start-level="80">mvn:com.zsmartsystems.zigbee/com.zsmartsystems.zigbee.console.ember/1.3.8</bundle>
+        <bundle start-level="80">mvn:com.zsmartsystems.zigbee/com.zsmartsystems.zigbee.console.telegesis/1.3.8</bundle>
+    </feature>
+    <feature name="openhab-ui-basic" description="Basic UI" version="3.0.2">
+        <feature>openhab-core-ui</feature>
+        <feature>openhab-iconset-classic</feature>
+        <feature>openhab-core-io-rest-sitemap</feature>
+        <bundle>mvn:org.openhab.ui.bundles/org.openhab.ui.basic/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-ui-cometvisu" description="CometVisu Backend" version="3.0.2">
+        <config name="org.openhab.cometvisu" append="false" external="false" override="false">
+webFolder=../../../CometVisu/src/
+
+icons&gt;enableMapping=true
+
+icons.mapping&gt;firstfloor=control_building_int_og
+icons.mapping&gt;groundfloor=control_building_int_eg
+icons.mapping&gt;cellar=control_building_int_kg
+icons.mapping&gt;garden=scene_garden
+icons.mapping&gt;sun=weather_sun
+icons.mapping&gt;video=scene_livingroom
+icons.mapping&gt;kitchen=scene_dinner
+icons.mapping&gt;bath=scene_bath
+icons.mapping&gt;corridor=scene_hall
+icons.mapping&gt;office=scene_office
+icons.mapping&gt;boy1=scene_childs_room
+icons.mapping&gt;bedroom=scene_sleeping
+icons.mapping&gt;heating=sani_heating
+icons.mapping&gt;temperature=temp_temperature
+icons.mapping&gt;contact=fts_window_1w
+
+</config>
+        <feature>openhab-core-model-item</feature>
+        <feature>openhab-core-model-sitemap</feature>
+        <feature>openhab-core-ui-icon</feature>
+        <feature>openhab-core-ui</feature>
+        <feature dependency="true">openhab.tp-jaxb</feature>
+        <feature dependency="true">openhab.tp-jackson</feature>
+        <bundle dependency="true">mvn:org.rrd4j/rrd4j/3.4</bundle>
+        <bundle>mvn:org.openhab.ui.bundles/org.openhab.ui.cometvisu/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-ui-cometvisu-php" description="PHP support for CometVisu" version="3.0.2">
+        <feature>openhab-core-ui</feature>
+        <feature>openhab-ui-cometvisu</feature>
+        <bundle>mvn:org.openhab.ui.bundles/org.openhab.ui.cometvisu.php/3.0.2</bundle>
+        <bundle>mvn:org.openhab/com.caucho.quercus/4.0.45</bundle>
+    </feature>
+    <feature name="openhab-ui-habot" description="HABot" version="3.0.2">
+        <feature>openhab-core-ui</feature>
+        <bundle>mvn:org.openhab.ui.bundles/org.openhab.ui.habot/3.0.2</bundle>
+        <bundle>mvn:org.openhab.core.bundles/org.openhab.core.semantics/3.0.2</bundle>
+        <bundle>mvn:org.openhab.core.bundles/org.openhab.core.io.rest/3.0.2</bundle>
+        <bundle dependency="true">mvn:org.bouncycastle/bcprov-jdk15on/1.54</bundle>
+        <bundle dependency="true">mvn:org.apache.opennlp/opennlp-tools/1.8.3</bundle>
+        <bundle dependency="true">mvn:org.bitbucket.b_c/jose4j/0.6.3</bundle>
+    </feature>
+    <feature name="openhab-ui-habpanel" description="HABPanel" version="3.0.2">
+        <feature>openhab-core-ui</feature>
+        <feature>openhab-iconset-classic</feature>
+        <bundle>mvn:org.openhab.ui.bundles/org.openhab.ui.habpanel/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-iconset-classic" version="3.0.2">
+        <feature>openhab-core-ui-icon</feature>
+        <bundle>mvn:org.openhab.ui.bundles/org.openhab.ui.iconset.classic/3.0.2</bundle>
+    </feature>
+    <feature name="openhab-addons" description="openHAB Add-ons Aggregator" version="3.0.2">
+        <details>This is the openHAB distribution</details>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-zwave</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-automation-groovyscripting</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-automation-jythonscripting</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-adorne</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-airquality</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-airvisualnode</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-alarmdecoder</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-allplay</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-amazondashbutton</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-amazonechocontrol</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-ambientweather</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-astro</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-atlona</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-autelis</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-automower</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-avmfritz</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-bigassfan</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-boschindego</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-bosesoundtouch</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-bsblan</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-bticinosmarther</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-buienradar</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-caddx</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-cbus</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-chromecast</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-cm11a</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-comfoair</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-coolmasternet</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-coronastats</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-daikin</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-danfossairunit</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-darksky</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-deconz</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-denonmarantz</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-digiplex</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-digitalstrom</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-dlinksmarthome</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-dmx</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-doorbird</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-draytonwiser</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-dscalarm</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-dsmr</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-dwdpollenflug</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-dwdunwetter</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-ecobee</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-elerotransmitterstick</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-energenie</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-enigma2</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-enocean</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-enturno</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-epsonprojector</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-etherrain</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-evohome</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-exec</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-feed</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-feican</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-fmiweather</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-folding</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-foobot</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-freebox</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-fronius</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-fsinternetradio</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-ftpupload</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-gardena</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-gce</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-globalcache</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-goecharger</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-gpstracker</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-gree</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-groheondus</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-harmonyhub</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-hdanywhere</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-hdpowerview</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-helios</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-heliosventilation</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-heos</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-homematic</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-hpprinter</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-http</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-hue</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-hydrawise</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-hyperion</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-iammeter</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-iaqualink</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-icalendar</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-icloud</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-ihc</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-innogysmarthome</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-insteon</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-intesis</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-ipcamera</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-ipp</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-irobot</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-irtrans</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-ism8</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-jablotron</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-jeelink</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-kaleidescape</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-keba</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-km200</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-knx</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-kodi</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-konnected</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-kostalinverter</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-kvv</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-lametrictime</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-lcn</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-leapmotion</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-lghombot</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-lgtvserial</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-lgwebos</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-lifx</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-linky</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-linuxinput</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-lirc</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-logreader</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-loxone</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-luftdateninfo</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-lutron</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-magentatv</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-mail</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-max</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-mcp23017</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-melcloud</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-meteoalerte</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-meteoblue</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-meteostick</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-miele</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-mihome</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-miio</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-milight</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-millheat</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-minecraft</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-monopriceaudio</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-mpd</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-mystrom</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-nanoleaf</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-neato</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-neeo</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-neohub</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-nest</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-netatmo</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-network</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-networkupstools</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-nibeheatpump</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-nibeuplink</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-nikobus</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-nikohomecontrol</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-novafinedust</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-ntp</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-nuki</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-nuvo</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-nzwateralerts</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-oceanic</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-ojelectronics</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-omnikinverter</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-onebusaway</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-onewire</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-onewiregpio</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-onkyo</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-opengarage</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-opensprinkler</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-openthermgateway</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-openuv</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-openweathermap</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-openwebnet</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-oppo</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-orvibo</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-paradoxalarm</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-pentair</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-phc</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-pioneeravr</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-pixometer</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-pjlinkdevice</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-playstation</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-plclogo</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-plugwise</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-powermax</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-pulseaudio</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-pushbullet</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-pushover</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-radiothermostat</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-regoheatpump</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-remoteopenhab</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-revogi</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-rfxcom</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-rme</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-robonect</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-rotel</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-russound</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-sagercaster</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-samsungtv</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-satel</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-senechome</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-seneye</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-sensebox</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-sensibo</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-serial</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-serialbutton</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-shelly</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-siemensrds</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-silvercrestwifisocket</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-sinope</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-sleepiq</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-smaenergymeter</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-smartmeter</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-smartthings</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-smhi</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-snmp</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-solaredge</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-solarlog</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-somfymylink</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-somfytahoma</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-sonos</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-sonyaudio</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-sonyprojector</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-spotify</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-squeezebox</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-synopanalyzer</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-systeminfo</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-tacmi</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-tado</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-tankerkoenig</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-telegram</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-teleinfo</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-tellstick</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-tesla</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-tibber</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-touchwand</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-tplinksmarthome</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-tr064</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-tradfri</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-unifi</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-unifiedremote</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-upb</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-upnpcontrol</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-urtsi</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-valloxmv</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-vektiva</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-velbus</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-velux</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-venstarthermostat</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-verisure</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-vigicrues</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-vitotronic</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-volvooncall</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-weathercompany</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-weatherunderground</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-wemo</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-wifiled</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-windcentrale</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-wlanthermo</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-wled</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-xmltv</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-xmppclient</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-yamahareceiver</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-yeelight</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-yioremote</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-zoneminder</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-zway</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-misc-homekit</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-misc-hueemulation</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-misc-imperihome</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-misc-neeo</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-misc-openhabcloud</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-persistence-dynamodb</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-persistence-influxdb</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-persistence-jdbc-derby</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-persistence-jdbc-h2</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-persistence-jdbc-hsqldb</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-persistence-jdbc-mariadb</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-persistence-jdbc-mysql</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-persistence-jdbc-postgresql</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-persistence-jdbc-sqlite</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-persistence-jpa</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-persistence-mapdb</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-persistence-mongodb</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-persistence-rrd4j</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-transformation-bin2json</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-transformation-exec</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-transformation-javascript</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-transformation-jinja</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-transformation-jsonpath</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-transformation-map</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-transformation-regex</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-transformation-scale</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-transformation-xpath</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-transformation-xslt</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-voice-googletts</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-voice-mactts</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-voice-marytts</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-voice-picotts</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-voice-pollytts</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-voice-voicerss</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-bluetooth</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-mqtt</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-modbus</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-binding-zigbee</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-ui-basic</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-ui-cometvisu</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-ui-cometvisu-php</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-ui-habot</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-ui-habpanel</feature>
+        <feature version="3.0.2" prerequisite="false" dependency="false">openhab-iconset-classic</feature>
+    </feature>
+</features>

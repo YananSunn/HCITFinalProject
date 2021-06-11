@@ -1,0 +1,14 @@
+osgi.wiring.package; (osgi.wiring.package=javax.security.auth.callback)
+0; version=0.0.0
+osgi.wiring.package; (osgi.wiring.package=org.osgi.framework)
+0; version=1.8.0
+osgi.wiring.package; (osgi.wiring.package=org.osgi.util.tracker)
+0; version=1.5.1
+osgi.wiring.package; (osgi.wiring.package=javax.security.auth.x500)
+0; version=0.0.0
+osgi.wiring.package; (osgi.wiring.package=javax.security.auth)
+0; version=0.0.0
+osgi.wiring.package; (osgi.wiring.package=javax.security.auth.login)
+0; version=0.0.0
+osgi.wiring.package; (osgi.wiring.package=javax.crypto)
+0; version=0.0.0
