@@ -1,0 +1,45 @@
+Actually the solution is very simple
+
+Just need to change the profile in mixed Reality toolkit (in the hierarchy window) to NUIX-Studio profile 
+
+I hope it is going to work
+
+But still eye tracking won't be supported 
+
+HandTracking will be supported though
+
+For each of the mrtk examples, you only need to change the camera profile in mrtk examples to OpenXRSDKConfiguration camera profile or NUIX-Studio camera profile, to make it move together with your head 
+
+Sorry that I still haven't provided the example of speech recognition, unexpectedly was asked to perform corrections in my thesis before the ddl today at 8pm. Bur as soon as I finish, will start implementing it 
+
+Yeah so this was the team I talked about
+
+They send the data over tcp and parse it inside oculus, without any openhab integration
+
+*Send the recognized text
+
+A bit difficult implementation, but I gonna ask them to share it
+
+https://cloud.tsinghua.edu.cn/f/013bc5f4d51441ed8dd8/
+
+This is a video tutorial
+
+There is one problem
+
+Android App requires Google app for speech recognition, but I guess your devices don't have it
+
+Another solution is using Homekit on your Apple devices, but voice control will be performed something like:
+
+Set sensor name to <your voice command>
+
+Can only wrap the command like this, that's Homekit limitations. Basically, the voice command will be treated as one of the iot devices in your smart home
+
+I have also installed speech recognition package on Oculus, but it is outdated and, again, relies on Google speech recognition
+
+Maybe using Azure services on your computer is the best solution, I got the source code and can create a tutorial for you
+
+https://github.com/Azure-Samples/cognitive-services-speech-sdk/tree/master/quickstart/csharp/unity/from-microphone
+
+Just used this tutorial, included the speech recognition asset. 
+
+I will also create a demo scene in the next commit to NUIX-Studio with my api key for speech recognition included, please don't share this key to others:) 
